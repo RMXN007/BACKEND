@@ -1,0 +1,20 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "a production practice file",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "backend",
+    "chai",
+    "raman"
+  ],
+  "author": "raman",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
