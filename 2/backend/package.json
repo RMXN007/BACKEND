@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "first full stack code",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Raman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
