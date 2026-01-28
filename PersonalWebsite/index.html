@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Section 1: Welcome -->
+    <section id="welcome" class="section welcome-section">
+        <div class="welcome-bg-element"></div>
+        <div class="content-container">
+            <h1 class="greeting">
+                <span id="greeting-text">Hello</span>,
+            </h1>
+            <h2 class="subtitle">Welcome to my universe.</h2>
+            <div class="moving-picture-container">
+                <div class="moving-picture"></div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Intro -->
+    <section id="intro" class="section intro-section">
+        <div class="glass-card hidden-element">
+            <h2>Who Am I?</h2>
+            <p class="intro-text">
+                I am a creator, a dreamer, and a builder. I craft digital experiences that blend aesthetics with
+                functionality.
+                Welcome to a glimpse of my journey, my passions, and my work.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 3: Photos -->
+    <section id="photos" class="section photos-section">
+        <h2 class="section-title hidden-element">Snapshots</h2>
+        <div class="gallery hidden-element">
+            <div class="photo-item"><img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60"
+                    alt="Moment 1"></div>
+            <div class="photo-item"><img
+                    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&auto=format&fit=crop&q=60"
+                    alt="Moment 2"></div>
+            <div class="photo-item"><img
+                    src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=500&auto=format&fit=crop&q=60"
+                    alt="Moment 3"></div>
+            <div class="photo-item"><img
+                    src="https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=500&auto=format&fit=crop&q=60"
+                    alt="Moment 4"></div>
+        </div>
+    </section>
+
+    <!-- Section 4: Music -->
+    <section id="music" class="section music-section">
+        <h2 class="section-title hidden-element">Vibes</h2>
+        <div class="music-marquee-container hidden-element">
+            <div class="music-marquee">
+                <div class="song-card">
+                    <i class="fas fa-music"></i>
+                    <div class="song-info">
+                        <h3>Midnight City</h3>
+                        <p>M83</p>
+                    </div>
+                </div>
+                <div class="song-card">
+                    <i class="fas fa-music"></i>
+                    <div class="song-info">
+                        <h3>Starboy</h3>
+                        <p>The Weeknd</p>
+                    </div>
+                </div>
+                <div class="song-card">
+                    <i class="fas fa-music"></i>
+                    <div class="song-info">
+                        <h3>Dreams</h3>
+                        <p>Fleetwood Mac</p>
+                    </div>
+                </div>
+                <div class="song-card">
+                    <i class="fas fa-music"></i>
+                    <div class="song-info">
+                        <h3>Night Call</h3>
+                        <p>Kavinsky</p>
+                    </div>
+                </div>
+                <div class="song-card">
+                    <i class="fas fa-music"></i>
+                    <div class="song-info">
+                        <h3>Instant Crush</h3>
+                        <p>Daft Punk</p>
+                    </div>
+                </div>
+                <!-- Duplicate for smooth loop -->
+                <div class="song-card">
+                    <i class="fas fa-music"></i>
+                    <div class="song-info">
+                        <h3>Midnight City</h3>
+                        <p>M83</p>
+                    </div>
+                </div>
+                <div class="song-card">
+                    <i class="fas fa-music"></i>
+                    <div class="song-info">
+                        <h3>Starboy</h3>
+                        <p>The Weeknd</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Stats -->
+    <section id="stats" class="section stats-section">
+        <h2 class="section-title hidden-element">Milestones</h2>
+        <div class="stats-grid hidden-element">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Studies</h3>
+                <p>Computer Science</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Achievements</h3>
+                <p>Top Coder 2024</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-star"></i></div>
+                <h3>Extras</h3>
+                <p>Photography & Art</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Skills -->
+    <section id="skills" class="section skills-section">
+        <h2 class="section-title hidden-element">Arsenal</h2>
+        <div class="skills-container hidden-element">
+            <div class="skill-item">
+                <div class="skill-name">Coding <i class="fas fa-code"></i></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Gaming <i class="fas fa-gamepad"></i></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Design <i class="fas fa-paint-brush"></i></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Outro -->
+    <section id="outro" class="section outro-section">
+        <div class="footer-content hidden-element">
+            <h2>Let's Connect</h2>
+            <p>Thanks for visiting. Reach out if you want to create something amazing.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Personal Portfolio.
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
