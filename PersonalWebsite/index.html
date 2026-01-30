@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cinematic Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -13,20 +13,19 @@
 </head>
 
 <body>
-
-    <!-- Section 1: Welcome -->
+    <!-- Section 1: Hero -->
     <section id="welcome" class="section welcome-section">
-        <div class="welcome-bg-element"></div>
+        <canvas id="starfield"></canvas>
         <div class="content-container">
             <h1 class="greeting">
-                <span id="greeting-text">Hello</span>,
+                <span id="typing-text"></span><span class="cursor">|</span>
             </h1>
-            <h2 class="subtitle">Welcome to my universe.</h2>
+            <h2 class="subtitle">Welcome to the Universe.</h2>
             <div class="moving-picture-container">
                 <div class="moving-picture"></div>
             </div>
             <div class="scroll-indicator">
-                <span>Explore</span>
+                <span>Start Journey</span>
                 <i class="fas fa-chevron-down"></i>
             </div>
         </div>
@@ -35,112 +34,149 @@
     <!-- Section 2: Intro -->
     <section id="intro" class="section intro-section">
         <div class="glass-card hidden-element">
-            <h2>Who Am I?</h2>
+            <h2>The Architect</h2>
             <p class="intro-text">
-                I am a creator, a dreamer, and a builder. I craft digital experiences that blend aesthetics with
-                functionality.
-                Welcome to a glimpse of my journey, my passions, and my work.
+                I don't just write code; I build worlds.
+                Merging creativity with logic to create digital experiences that linger in memory.
             </p>
         </div>
     </section>
 
-    <!-- Section 3: Photos -->
+    <!-- Section: Journey (New) -->
+    <section id="journey" class="section journey-section">
+        <h2 class="section-title hidden-element">My Journey</h2>
+        <div class="timeline hidden-element">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2020</h3>
+                    <p>Wrote my first line of code. "Hello World" never felt so good.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2022</h3>
+                    <p>Built my first full-stack application. Learned the power of databases.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2025</h3>
+                    <p>Mastering AI agents and immersive web experiences.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2026</h3>
+                    <p>Launching the "Cinematic" era of web design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Photos (Gallery) -->
     <section id="photos" class="section photos-section">
-        <h2 class="section-title hidden-element">Snapshots</h2>
+        <h2 class="section-title hidden-element">Visuals</h2>
         <div class="gallery hidden-element">
+            <!-- Added data-full for lightbox -->
             <div class="photo-item"><img
                     src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60"
-                    alt="Moment 1"></div>
+                    data-full="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200" alt="Ocean View">
+            </div>
             <div class="photo-item"><img
                     src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&auto=format&fit=crop&q=60"
-                    alt="Moment 2"></div>
+                    data-full="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200"
+                    alt="Mountain Night"></div>
             <div class="photo-item"><img
                     src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=500&auto=format&fit=crop&q=60"
-                    alt="Moment 3"></div>
+                    data-full="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=1200" alt="Alpine Lake">
+            </div>
             <div class="photo-item"><img
                     src="https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=500&auto=format&fit=crop&q=60"
-                    alt="Moment 4"></div>
+                    data-full="https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=1200" alt="City Lights">
+            </div>
         </div>
     </section>
 
-    <!-- Section 4: Music -->
+    <!-- Section: Gaming Setup (New) -->
+    <section id="setup" class="section setup-section">
+        <h2 class="section-title hidden-element">Command Center</h2>
+        <div class="setup-grid hidden-element">
+            <div class="setup-card">
+                <i class="fas fa-desktop"></i>
+                <h3>RTX 4090</h3>
+                <p>The Powerhouse</p>
+            </div>
+            <div class="setup-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Intel i9</h3>
+                <p>The Brain</p>
+            </div>
+            <div class="setup-card">
+                <i class="fas fa-keyboard"></i>
+                <h3>Custom Mech</h3>
+                <p>The Tool</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Music (Player) -->
     <section id="music" class="section music-section">
-        <h2 class="section-title hidden-element">Vibes</h2>
-        <div class="music-marquee-container hidden-element">
-            <div class="music-marquee">
-                <div class="song-card">
-                    <i class="fas fa-music"></i>
-                    <div class="song-info">
-                        <h3>Midnight City</h3>
-                        <p>M83</p>
+        <h2 class="section-title hidden-element">Sonic Atmosphere</h2>
+        <div id="player-container" class="glass-card hidden-element">
+            <div id="youtube-player"></div> <!-- YouTube Iframe replaces this -->
+            <div class="player-ui">
+                <div class="track-info">
+                    <h3 id="track-title">Loading Vibes...</h3>
+                    <div class="equalizer">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
                     </div>
                 </div>
-                <div class="song-card">
-                    <i class="fas fa-music"></i>
-                    <div class="song-info">
-                        <h3>Starboy</h3>
-                        <p>The Weeknd</p>
-                    </div>
-                </div>
-                <div class="song-card">
-                    <i class="fas fa-music"></i>
-                    <div class="song-info">
-                        <h3>Dreams</h3>
-                        <p>Fleetwood Mac</p>
-                    </div>
-                </div>
-                <div class="song-card">
-                    <i class="fas fa-music"></i>
-                    <div class="song-info">
-                        <h3>Night Call</h3>
-                        <p>Kavinsky</p>
-                    </div>
-                </div>
-                <div class="song-card">
-                    <i class="fas fa-music"></i>
-                    <div class="song-info">
-                        <h3>Instant Crush</h3>
-                        <p>Daft Punk</p>
-                    </div>
-                </div>
-                <!-- Duplicate for smooth loop -->
-                <div class="song-card">
-                    <i class="fas fa-music"></i>
-                    <div class="song-info">
-                        <h3>Midnight City</h3>
-                        <p>M83</p>
-                    </div>
-                </div>
-                <div class="song-card">
-                    <i class="fas fa-music"></i>
-                    <div class="song-info">
-                        <h3>Starboy</h3>
-                        <p>The Weeknd</p>
-                    </div>
+                <div class="controls">
+                    <button id="prev-btn" class="control-btn"><i class="fas fa-backward"></i></button>
+                    <button id="play-btn" class="control-btn"><i class="fas fa-play"></i></button>
+                    <button id="next-btn" class="control-btn"><i class="fas fa-forward"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 5: Stats -->
+    <!-- Section 5: Stats (Interactive) -->
     <section id="stats" class="section stats-section">
-        <h2 class="section-title hidden-element">Milestones</h2>
+        <h2 class="section-title hidden-element">Legacy</h2>
         <div class="stats-grid hidden-element">
             <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
-                <h3>Studies</h3>
-                <p>Computer Science</p>
+                <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+                <h3 class="counter" data-target="24">0</h3>
+                <p>Projects Built</p>
             </div>
             <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
-                <h3>Achievements</h3>
-                <p>Top Coder 2024</p>
+                <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                <h3 class="counter" data-target="1200">0</h3>
+                <p>Coding Hours</p>
             </div>
             <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-star"></i></div>
-                <h3>Extras</h3>
-                <p>Photography & Art</p>
+                <div class="stat-icon"><i class="fas fa-gamepad"></i></div>
+                <h3 class="counter" data-target="87">0</h3>
+                <p>Games Conquered</p>
             </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-video"></i></div>
+                <h3 class="counter" data-target="45">0</h3>
+                <p>Videos Edited</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: YouTube Channel (New) -->
+    <section id="youtube" class="section youtube-section">
+        <h2 class="section-title hidden-element">PurePixel</h2>
+        <div class="glass-card hidden-element">
+            <p>Check out my latest content creation journeys.</p>
+            <button class="cta-button">Visit Channel <i class="fab fa-youtube"></i></button>
         </div>
     </section>
 
@@ -149,21 +185,21 @@
         <h2 class="section-title hidden-element">Arsenal</h2>
         <div class="skills-container hidden-element">
             <div class="skill-item">
-                <div class="skill-name">Coding <i class="fas fa-code"></i></div>
+                <div class="skill-name">Development <i class="fas fa-code"></i></div>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-name">Gaming <i class="fas fa-gamepad"></i></div>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 85%;"></div>
+                    <div class="skill-progress" style="width: 95%;"></div>
                 </div>
             </div>
             <div class="skill-item">
                 <div class="skill-name">Design <i class="fas fa-paint-brush"></i></div>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="width: 75%;"></div>
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Video Editing <i class="fas fa-film"></i></div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
                 </div>
             </div>
         </div>
@@ -172,21 +208,27 @@
     <!-- Section 7: Outro -->
     <section id="outro" class="section outro-section">
         <div class="footer-content hidden-element">
-            <h2>Let's Connect</h2>
-            <p>Thanks for visiting. Reach out if you want to create something amazing.</p>
+            <h2>End Transmission</h2>
             <div class="social-links">
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Personal Portfolio.
+                &copy; 2026 Cinematic Portfolio.
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
