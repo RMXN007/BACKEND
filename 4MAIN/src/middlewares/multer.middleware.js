@@ -9,6 +9,6 @@ const storage = multer.diskStorage({
         cb(null, file.originalname())
     }
 })
-
+//akhiya 
 
 export const upload = multer({ storage })
