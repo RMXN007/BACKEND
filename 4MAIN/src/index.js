@@ -1,6 +1,8 @@
 // require('dotenv').config({path:'./.env'})
 console.log("ENV:", process.env.MONGODB_URI);
 
+import { app } from './app.js';
+
 import dotenv from 'dotenv';
 import connectDB from "./db/index.js"
 
